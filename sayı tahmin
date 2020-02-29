@@ -1,0 +1,21 @@
+import random
+
+randomsayi = random.randint(0,100)
+hak = 5
+
+while hak > 0:
+    hak -= 1
+    inputsayi = int(input("0 ile 100 Arası Bir Sayı Giriniz: "))
+
+    if randomsayi == inputsayi:
+         print(f"Tebrikler Buldunuz Sayı: {randomsayi}")
+         break
+    elif inputsayi > randomsayi:
+        print("Aşağı")
+    else:
+        print("Yukarı")
+    
+    if hak == 0:
+        print(f"Hakkınız Bitti. Sayı: {randomsayi}")
+
+print(randomsayi)
